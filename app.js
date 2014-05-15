@@ -17,7 +17,7 @@ var users = require('./routes/user');
 var app = express();
 
 //Load the Database with the Google User Requests
-/*
+
 csv(records)
    .from.stream(fs.createReadStream(__dirname + '/google-user-data-requests.csv'), {
    columns: true
@@ -37,7 +37,7 @@ csv(records)
       });
    });
    console.log('Number of lines: ' + count);
-}); */
+}); 
 
 //Mongoose Connection
 mongoose.connect('mongodb://localhost:27017/myGoogleDataDb');
